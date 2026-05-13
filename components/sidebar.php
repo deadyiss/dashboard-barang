@@ -53,7 +53,7 @@ $masterOpen = in_array($currentPage, ['barang', 'barangtambah', 'barangedit', 'l
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="?page=dashboard">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/?page=dashboard">
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
     </div>
@@ -65,7 +65,7 @@ $masterOpen = in_array($currentPage, ['barang', 'barangtambah', 'barangedit', 'l
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item <?= $currentPage === 'dashboard' ? 'active' : '' ?>">
-    <a class="nav-link <?= $currentPage === 'dashboard' ? 'active' : '' ?>" href="?page=dashboard">
+    <a class="nav-link <?= $currentPage === 'dashboard' ? 'active' : '' ?>" href="/?page=dashboard">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
 </li>
@@ -88,12 +88,12 @@ $masterOpen = in_array($currentPage, ['barang', 'barangtambah', 'barangedit', 'l
     <div id="collapsePages" class="collapse <?= $masterOpen ? 'show' : '' ?>" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Bagian 1:</h6>
-            <a class="collapse-item <?= in_array($currentPage, ['barang', 'barangedit']) ? 'active' : '' ?>" href="?page=barang">Barang</a>
-            <a class="collapse-item <?= $currentPage === 'barangtambah' ? 'active' : '' ?>" href="?page=barangtambah">Tambah Barang</a>
-            <a class="collapse-item <?= $currentPage === 'login' ? 'active' : '' ?>" href="?page=login">Login</a>
+            <a class="collapse-item <?= in_array($currentPage, ['barang', 'barangedit']) ? 'active' : '' ?>" href="/?page=barang">Barang</a>
+            <a class="collapse-item <?= $currentPage === 'barangtambah' ? 'active' : '' ?>" href="/?page=barangtambah">Tambah Barang</a>
+            <a class="collapse-item <?= $currentPage === 'login' ? 'active' : '' ?>" href="/?page=login">Login</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Bagian 2:</h6>
-            <a class="collapse-item <?= $currentPage === '404' ? 'active' : '' ?>" href="?page=404">404 Page</a>
+            <a class="collapse-item <?= $currentPage === '404' ? 'active' : '' ?>" href="/?page=404">404 Page</a>
         </div>
     </div>
 </li>

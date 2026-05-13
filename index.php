@@ -8,7 +8,7 @@
         <?php include "components/sidebar.php"; ?>
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-                <?php include "components/navbar.php"; ?>
+                <?php include "components/nav.php"; ?>
                 <div class="container-fluid">
                     <?php include "routes.php"; ?>
                 </div>

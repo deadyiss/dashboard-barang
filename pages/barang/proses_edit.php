@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['_method'] === 'PUT') {
     $kategori = $_POST['kategori_id'];
 
     if ($harga < 0) {
-        echo '<meta http-equiv="refresh" content="0;url=?page=barangedit&id=' . $id . '&error=harga_tidak_boleh_negatif">';
+        echo '<meta http-equiv="refresh" content="0;url=/?page=barangedit&id=' . $id . '&error=harga_tidak_boleh_negatif">';
         exit();
     }
 
@@ -16,6 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['_method'] === 'PUT') {
     $sql = "UPDATE barang SET nama_barang = ?, harga = ?, kategori_id = ? WHERE id = ?";
     $pdo->prepare($sql)->execute([$nama, $harga, $kategori, $id]);
 
-    echo '<meta http-equiv="refresh" content="0;url=?page=barang&pesan=berhasil_update">';
+    echo '<meta http-equiv="refresh" content="0;url=/?page=barang&pesan=berhasil_update">';
     exit();
 }

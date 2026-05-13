@@ -30,7 +30,7 @@ $kategoriStmt = $pdo->query("SELECT * FROM kategori");
         <h6 class="m-0 font-weight-bold text-primary">Form Edit Barang</h6>
     </div>
     <div class="card-body">
-        <form action="?page=barangeditproses" method="POST">
+        <form action="/?page=barangeditproses" method="POST">
             <input type="hidden" name="_method" value="PUT">
             <input type="hidden" name="id" value="<?= $barang['id']; ?>">
 
@@ -57,7 +57,7 @@ $kategoriStmt = $pdo->query("SELECT * FROM kategori");
                 <button type="submit" class="btn btn-success">
                     <i class="fas fa-save"></i> Update Data
                 </button>
-                <a href="?page=barang" class="btn btn-secondary">
+                <a href="/?page=barang" class="btn btn-secondary">
                     <i class="fas fa-arrow-left"></i> Kembali
                 </a>
             </div>

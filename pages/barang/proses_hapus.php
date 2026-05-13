@@ -9,6 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['_method']=== 'DELETE') {
     $pdo->prepare($sql)->execute([$id]);
 
     // Redirect ke halaman daftar barang setelah berhasil menghapus data
-    header("Location: index.php?page=barang&pesan=berhasil_hapus");
+    header("Location: /?page=barang&pesan=berhasil_hapus");
     exit();
 }

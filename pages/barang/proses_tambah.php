@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ]);
 
     // Redirect ke halaman index setelah berhasil menambahkan data
-    echo'<meta http-equiv="refresh" content="0;url=?page=barang">';
+    echo'<meta http-equiv="refresh" content="0;url=/?page=barang">';
     exit();
 }
 

@@ -25,10 +25,10 @@ $stmt = $pdo->query("SELECT barang.*, kategori.nama_kategori
     </div>
     <div class="card-body">
         <div class="mb-3">
-            <a href="?page=barangtambah" class="btn btn-primary">
+            <a href="/?page=barangtambah" class="btn btn-primary">
                 <i class="fas fa-plus"></i> Tambah Barang
             </a>
-            <a href="pages/barang/cetak.php" target="_blank" class="btn btn-success">
+            <a href="/pages/barang/cetak.php" target="_blank" class="btn btn-success">
                 <i class="fas fa-print"></i> Cetak PDF
             </a>
         </div>
@@ -61,7 +61,7 @@ $stmt = $pdo->query("SELECT barang.*, kategori.nama_kategori
                             <?php endif; ?>
                         </td>
                         <td>
-                            <a href="?page=barangedit&id=<?= $row['id'] ?>" class="btn btn-warning btn-sm" title="Edit">
+                            <a href="/?page=barangedit&id=<?= $row['id'] ?>" class="btn btn-warning btn-sm" title="Edit">
                                 <img src="images/edit.png" alt="Edit" width="16" height="16">
                             </a>
                             <form action="proses_hapus.php" method="POST" style="display:inline" onsubmit="return confirm('Yakin hapus data?')">

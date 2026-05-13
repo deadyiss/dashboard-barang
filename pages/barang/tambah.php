@@ -11,7 +11,7 @@ $stmt = $pdo->query("SELECT * FROM kategori");
         <h6 class="m-0 font-weight-bold text-primary">Form Tambah Barang</h6>
     </div>
     <div class="card-body">
-        <form action="?page=barangtambahproses" method="POST">
+        <form action="/?page=barangtambahproses" method="POST">
             <div class="form-group">
                 <label for="nama_barang">Nama Barang</label>
                 <input type="text" class="form-control" id="nama_barang" name="nama_barang" required>
@@ -37,7 +37,7 @@ $stmt = $pdo->query("SELECT * FROM kategori");
                 <button type="submit" class="btn btn-primary">
                     <i class="fas fa-save"></i> Simpan Data
                 </button>
-                <a href="?page=barang" class="btn btn-secondary ml-2">
+                <a href="/?page=barang" class="btn btn-secondary ml-2">
                     <i class="fas fa-arrow-left"></i> Kembali
                 </a>
             </div>
