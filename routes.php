@@ -5,7 +5,7 @@ $page = $_GET['page'] ?? 'dashboard';
 switch ($page) {
     case '':
     case 'dashboard':
-        include "dashboard.php";
+        include "pages/kategori/dashboard.php";
         break;
     case 'barang':
         include "pages/barang/index.php";
