@@ -13,11 +13,17 @@ Isi utama:
 Cara deploy:
 
 1. Pastikan PHP terpasang di sistem.
-2. Jalankan server PHP dari folder proyek ini:
+2. Membuat user MySQL
+   ```bash
+   CREATE USER IF NOT EXISTS 'webuser'@'127.0.0.1' IDENTIFIED BY 'web123';
+   GRANT ALL PRIVILEGES ON db_praktikum_php.* TO 'webuser'@'127.0.0.1';
+   FLUSH PRIVILEGES;
+   ```
+3. Jalankan server PHP dari folder proyek ini:
    ```bash
    php -S localhost:8000
    ```
-3. Akses aplikasi di browser:
+4. Akses aplikasi di browser:
    ```
    http://localhost:8000
    ```
